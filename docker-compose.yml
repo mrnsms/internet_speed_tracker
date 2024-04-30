@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  internet_speed_tracker:
+    image: <your_image_name_here>
+    container_name: internet_speed_tracker
+    environment:
+      - CONFIG_TOML=| [settings] interval_minutes = <interval_in_minutes> influxdb_url = "<your_influxdb_url>" token = "<your_influxdb_token>" org = "<your_organization_name>" bucket = "<your_bucket_name>"
+    command: python -u script.py
+    restart: always

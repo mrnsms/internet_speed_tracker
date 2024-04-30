@@ -1,0 +1,11 @@
+# Python related
+__pycache__/
+*.py[cod]
+
+# Docker related
+*.log
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
